@@ -3,6 +3,7 @@ mongoose.connect('mongodb://localhost/pos-unoesc');
 
 var db = mongoose.connection;
 
+<<<<<<< HEAD
 db.on('error', function(err) {// importação do módulo model.js
 var Model = require('./model');
 
@@ -78,6 +79,9 @@ var Controller = {
 };
 
 module.exports = Controller; 
+=======
+db.on('error', function(err) {
+>>>>>>> c1da227ad9643e8f16f1b6b2ac5126a33a7ed241
 	console.log('Erro de conexao', err);
 });
 
